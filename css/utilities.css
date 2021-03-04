@@ -1,0 +1,55 @@
+/* Variables */
+:root {
+    --dark: #333;
+    --grey: #5e5e5e;
+    --light: #fcfaf9;
+    --primary: #bb4f2d;
+    --secondary: #a8bc77;
+    --tertiary: #f4f0d0;
+}
+.category {
+    --breakfast: #f99500;
+    --lunch: #a66bbe;
+    --beverages: #99284e;
+    --appetizers: #85cfff;
+    --soups: #28983d;
+    --salads: #009cff;
+    --deserts: #b699a2;
+}
+
+/* Categories */
+.category {
+    display: inline-block;
+    color: var(--light);
+    text-transform: uppercase;
+    padding: 0.1rem 0.5rem;
+    border-radius: 30px;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+    width: fit-content;
+}
+.category-breakfast {
+    background-color: var(--breakfast);
+}
+.category-lunch {
+    background-color: var(--lunch);
+}
+.category-beverages {
+    background-color: var(--beverages);
+}
+.category-appetizers {
+    background-color: var(--appetizers);
+}
+.category-soups {
+    background-color: var(--soups);
+}
+.category-salads {
+    background-color: var(--salads);
+}
+.category-deserts {
+    background-color: var(--deserts);
+}
+
+/* Button links */
+.btn {
+}

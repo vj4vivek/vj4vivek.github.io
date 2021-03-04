@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Mukta:wght@400;700&display=swap");
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font: 1rem "Mukta", sans-serif;
+    background-color: var(--light);
+}
+a {
+    text-decoration: none;
+    color: var(--light);
+}
+ul {
+    list-style: none;
+}
+img {
+    height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merienda", cursive;
+}
+
+/* Navbar */
+#main-nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+#main-nav .container {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    padding: 0 20px;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+}
+#main-nav .container::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark);
+    opacity: 0.6;
+}
+#main-nav .logo {
+    flex: 6;
+    height: inherit;
+}
+#main-nav .logo img {
+    padding: 5px 3px;
+}
+#main-nav .links {
+    display: flex;
+}
+#main-nav .links li {
+    padding: 0 15px;
+}
+#main-nav .links a .current {
+    color: var(--primary);
+}
+#main-nav .social {
+    font-size: 10px;
+    margin-left: 20px;
+}
+#main-nav .social a {
+    padding: 3px;
+}
+#main-nav .search {
+    margin-left: 20px;
+}
+#main-nav .search input {
+    display: none;
+}
+
+/* Showcase */
+#showcase {
+    z-index: -1;
+    height: 55vh;
+    min-height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--dark);
+    color: var(--light);
+}
+#showcase::before {
+    z-index: -2;
+    content: "";
+    background: url(../img/featured.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.35;
+}
+#showcase .container {
+    z-index: 1;
+    padding: 2rem;
+    width: 40%;
+    overflow: hidden;
+}
+#showcase .container h1 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: var(--secondary);
+    text-shadow: 2px 2px 2px #333;
+}
+#showcase .container p {
+    /* text-align: justify; */
+    margin-bottom: 30px;
+}
