@@ -6,6 +6,9 @@
     --primary: #bb4f2d;
     --secondary: #a8bc77;
     --tertiary: #f4f0d0;
+
+    --max-width: 1300px;
+    --navbar-height: 70px;
 }
 .category {
     --breakfast: #f99500;
@@ -52,4 +55,10 @@
 
 /* Button links */
 .btn {
+    background-color: var(--secondary);
+    color: var(--dark);
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 30px;
+    width: fit-content;
 }
