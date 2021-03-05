@@ -29,7 +29,7 @@
     border-radius: 30px;
     margin-bottom: 0.5rem;
     font-size: 0.7rem;
-    width: fit-content;
+    width: max-content;
 }
 .category-breakfast {
     background-color: var(--breakfast);
@@ -60,7 +60,7 @@
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 30px;
-    width: fit-content;
+    width: max-content;
 }
 
 /* Article Cards */
