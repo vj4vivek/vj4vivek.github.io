@@ -2,7 +2,7 @@
 :root {
     --dark: #333;
     --grey: #5e5e5e;
-    --light: #fcfaf9;
+    --light: #f3f3f3;
     --primary: #bb4f2d;
     --secondary: #a8bc77;
     --tertiary: #f4f0d0;
@@ -14,10 +14,10 @@
     --breakfast: #f99500;
     --lunch: #a66bbe;
     --beverages: #99284e;
-    --appetizers: #85cfff;
+    --appetizers: #df0a98;
     --soups: #28983d;
     --salads: #009cff;
-    --deserts: #b699a2;
+    --desserts: #b699a2;
 }
 
 /* Categories */
@@ -49,8 +49,8 @@
 .category-salads {
     background-color: var(--salads);
 }
-.category-deserts {
-    background-color: var(--deserts);
+.category-desserts {
+    background-color: var(--desserts);
 }
 
 /* Button links */
@@ -61,4 +61,11 @@
     padding: 5px 10px;
     border-radius: 30px;
     width: fit-content;
+}
+
+/* Article Cards */
+.card {
+    padding: 1rem;
+    background: #f5f5f5;
+    box-shadow: 2px 2px 10px rgba(153, 153, 153, 0.6);
 }
