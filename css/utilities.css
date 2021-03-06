@@ -7,6 +7,7 @@
     --secondary: #bb4f2d;
     --tertiary: #f4f0d0;
     --light-shadow: 153, 153, 153; /* for use in rgba(light-shadow, opacity) */
+    --grey-shadow: 51, 51, 51;
     --max-width: 1300px;
     --navbar-height: 70px;
     --grid-gap: 24px;
@@ -31,7 +32,7 @@
     margin-bottom: 10px;
     font-size: 0.7rem;
     width: max-content;
-    box-shadow: 2px 2px 1px rgba(51, 51, 51, 0.4);
+    box-shadow: 2px 2px 3px rgba(var(--grey-shadow), 0.2);
 }
 .category-breakfast {
     background-color: var(--breakfast);
@@ -55,6 +56,31 @@
     background-color: var(--desserts);
 }
 
+/* Backgrounds */
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+.bg-tertiary {
+    background-color: var(--tertiary) !important;
+}
+
+/* Containers */
+/* Outer container */
+.container {
+    margin: auto;
+    overflow: hidden;
+    max-width: var(--max-width);
+}
+/* Inner container */
+.grid-container {
+    display: grid;
+    gap: var(--grid-gap);
+    max-width: var(--max-width);
+    margin: auto;
+}
 /* Button links */
 .btn {
     background-color: var(--primary);
@@ -63,6 +89,7 @@
     padding: 5px 10px;
     border-radius: 30px;
     width: max-content;
+    box-shadow: 2px 2px 5px rgba(var(--dark-shadow), 0.25);
 }
 
 /* Article Cards */
@@ -70,6 +97,20 @@
     padding: 16px;
     background: #f5f5f5;
     box-shadow: 2px 2px 10px rgba(var(--light-shadow), 0.6);
+}
+.card h1,
+.card h2 {
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 1px rgba(var(--light-shadow), 0.25);
+}
+.card h1 {
+    font-size: 2rem;
+}
+.card h2 {
+    font-size: 1.5rem;
+}
+.card p {
+    margin-bottom: 10px;
 }
 
 /* Lists */
