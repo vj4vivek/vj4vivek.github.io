@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Mukta:wght@400;700&display=swap");
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    font: 1rem "Mukta", sans-serif;
+    background-color: var(--light);
+}
+a {
+    text-decoration: none;
+    color: var(--light);
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merienda", cursive;
+}
+input {
+    font-family: "Mukta", sans-serif;
+    font-size: 1rem;
+}

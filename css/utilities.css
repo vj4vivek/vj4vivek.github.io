@@ -81,6 +81,7 @@
     max-width: var(--max-width);
     margin: auto;
 }
+
 /* Button links */
 .btn {
     background-color: var(--primary);
@@ -90,6 +91,11 @@
     border-radius: 30px;
     width: max-content;
     box-shadow: 2px 2px 5px rgba(var(--dark-shadow), 0.25);
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.8;
+    transition: opacity 0.1s ease-out;
 }
 
 /* Article Cards */
@@ -120,4 +126,6 @@
     width: 100%;
 }
 .list li a:hover {
+    color: var(--primary);
+    transition: color 0.2s ease-out;
 }
