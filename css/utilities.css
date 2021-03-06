@@ -6,9 +6,10 @@
     --primary: #a8bc77;
     --secondary: #bb4f2d;
     --tertiary: #f4f0d0;
-
+    --light-shadow: 153, 153, 153; /* for use in rgba(light-shadow, opacity) */
     --max-width: 1300px;
     --navbar-height: 70px;
+    --grid-gap: 24px;
 }
 .category {
     --breakfast: #f99500;
@@ -30,7 +31,7 @@
     margin-bottom: 10px;
     font-size: 0.7rem;
     width: max-content;
-    box-shadow: 1px 1px 3px rgba(51, 51, 51, 0.2);
+    box-shadow: 2px 2px 1px rgba(51, 51, 51, 0.4);
 }
 .category-breakfast {
     background-color: var(--breakfast);
@@ -68,7 +69,7 @@
 .card {
     padding: 16px;
     background: #f5f5f5;
-    box-shadow: 2px 2px 10px rgba(153, 153, 153, 0.6);
+    box-shadow: 2px 2px 10px rgba(var(--light-shadow), 0.6);
 }
 
 /* Lists */
