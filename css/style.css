@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 body {
@@ -27,6 +28,10 @@ h4,
 h5,
 h6 {
     font-family: "Merienda", cursive;
+}
+input {
+    font-family: "Mukta", sans-serif;
+    font-size: 1rem;
 }
 
 /* Navbar */
@@ -73,7 +78,7 @@ h6 {
 #main-nav .links li {
     padding: 0 15px;
 }
-#main-nav .links a .current {
+#main-nav .links a.current {
     color: var(--primary);
 }
 #main-nav .social {
@@ -93,7 +98,7 @@ h6 {
 /* Showcase */
 #showcase {
     z-index: 1;
-    height: 70vh;
+    height: 50vh;
     min-height: 500px;
     width: 100%;
     background: url(../img/featured.jpg) no-repeat center center/cover;
@@ -111,7 +116,7 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 #showcase .container {
     z-index: 1;
@@ -132,7 +137,7 @@ h6 {
 }
 #showcase .container h1 {
     margin: 0 0 20px 0px;
-    color: var(--secondary);
+    color: var(--primary);
     text-shadow: 2px 2px 2px #222;
 }
 #showcase .container p {
@@ -151,14 +156,14 @@ h6 {
 }
 #recipes .container {
     margin: auto;
-    padding: 20px;
+    padding: 30px;
     max-width: var(--max-width);
     align-items: center;
 }
 #recipes .recipes-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem;
+    gap: 24px;
 }
 #recipes h2 {
     margin-bottom: 10px;
@@ -167,7 +172,11 @@ h6 {
 #recipes a {
     color: var(--dark);
     font-size: 1.5rem;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 1px rgba(153, 153, 153, 0.4);
+}
+#recipes p {
+    margin-left: 1px;
 }
 #recipes img {
     height: 200px;
@@ -175,8 +184,47 @@ h6 {
     border: 1px solid var(--grey);
 }
 #recipes .category {
-    margin-bottom: 0.3rem;
+    margin-bottom: 3px;
 }
-#recipes p {
-    margin-top: 5px;
+
+/* Footer */
+#main-footer {
+    background-color: var(--dark);
+    color: var(--light);
+}
+#main-footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 32px 0 32px 32px;
+    margin: auto;
+    max-width: var(--max-width);
+    text-align: center;
+}
+#main-footer .container > *:last-child {
+    background: var(--grey);
+    grid-column: 1 / span 4;
+    text-align: center;
+    align-items: center;
+    padding: 8px;
+    margin-top: 20px;
+    margin-right: 24px;
+}
+#main-footer .container img {
+    height: 60px;
+    width: auto;
+}
+#main-footer .container span a {
+    color: var(--primary);
+}
+#main-footer .container h3 {
+    margin-bottom: 15px;
+}
+#main-footer .container input[type="email"] {
+    width: 90%;
+    padding: 3px;
+    margin: 15px 0;
+}
+#main-footer .container input[type="submit"] {
+    width: 50%;
 }

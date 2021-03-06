@@ -3,8 +3,8 @@
     --dark: #333;
     --grey: #5e5e5e;
     --light: #f3f3f3;
-    --primary: #bb4f2d;
-    --secondary: #a8bc77;
+    --primary: #a8bc77;
+    --secondary: #bb4f2d;
     --tertiary: #f4f0d0;
 
     --max-width: 1300px;
@@ -25,11 +25,12 @@
     display: inline-block;
     color: var(--light);
     text-transform: uppercase;
-    padding: 0.1rem 0.5rem;
+    padding: 2px 8px;
     border-radius: 30px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 10px;
     font-size: 0.7rem;
     width: max-content;
+    box-shadow: 1px 1px 3px rgba(51, 51, 51, 0.2);
 }
 .category-breakfast {
     background-color: var(--breakfast);
@@ -55,7 +56,7 @@
 
 /* Button links */
 .btn {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     color: var(--dark);
     font-weight: bold;
     padding: 5px 10px;
@@ -65,7 +66,16 @@
 
 /* Article Cards */
 .card {
-    padding: 1rem;
+    padding: 16px;
     background: #f5f5f5;
     box-shadow: 2px 2px 10px rgba(153, 153, 153, 0.6);
+}
+
+/* Lists */
+.list li {
+    padding: 8px 0;
+    border-bottom: var(--grey) dotted 1px;
+    width: 100%;
+}
+.list li a:hover {
 }
