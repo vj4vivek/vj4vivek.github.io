@@ -7,7 +7,11 @@
     border: 0;
     box-sizing: border-box;
 }
+html {
+    height: 100%;
+}
 body {
+    min-height: 100%;
     font: 1rem "Mukta", sans-serif;
     background-color: var(--light);
 }
@@ -44,6 +48,7 @@ input {
 #main-nav .logo img {
     height: 100%;
     width: auto;
+    padding: 5px 3px;
 }
 #main-nav .container {
     z-index: 2;
@@ -69,9 +74,6 @@ input {
 #main-nav .logo {
     flex: 6;
     height: inherit;
-}
-#main-nav .logo img {
-    padding: 5px 3px;
 }
 #main-nav .links {
     display: flex;
@@ -185,21 +187,23 @@ input {
 #main-footer {
     background-color: var(--dark);
     color: var(--light);
+    /* position: relative;
+    bottom: 0; */
 }
 #main-footer .grid-container {
     grid-template-columns: repeat(3, 1fr);
-    padding: 32px 0 32px 32px;
+    padding: 32px 32px 32px var(--grid-gap);
     text-align: center;
 }
-#main-footer .grid-container > *:last-child {
+#main-footer .grid-container .footer {
     background: var(--grey);
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 3;
     padding: 8px;
-    margin-top: 20px 0 0 var(--grid-gap);
+    margin-top: 20px;
 }
 #main-footer .grid-container img {
     height: 60px;
-    width: auto;
+    object-fit: contain;
 }
 #main-footer .grid-container span a {
     color: var(--primary);
@@ -218,23 +222,43 @@ input {
 }
 
 /* Page: About */
-#about .container {
-    padding: 0 32px;
+#about {
+    display: flex;
+    flex-direction: column;
 }
-#about .grid-container {
+#about-blog {
+    flex: 1 0 auto;
+}
+#about-blog .container {
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+#about-blog .grid-container {
     margin: 50px 0;
     grid-template-columns: 4fr 2fr;
 }
-#about .grid-container > *:first-child {
+#about-blog .grid-container article {
+    grid-row: 1 / span 3;
+    order: 1;
+}
+#about-blog .grid-container aside {
+    order: 2;
+}
+#about-blog .grid-container .footer {
     grid-row: 1 / span 3;
 }
-#about .about-me img {
+#about-blog .about-me img {
     border-radius: 50%;
-    height: 200px;
+    max-height: 200px;
     width: auto;
     display: block;
     margin: auto;
     border: 2px solid var(--dark);
     box-shadow: 1px 1px 10px rgba(var(--grey-shadow), 0.25);
     margin-bottom: 10px;
+}
+#about-blog #main-footer {
+    flex-shrink: 0;
 }

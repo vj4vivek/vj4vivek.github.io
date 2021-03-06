@@ -17,6 +17,16 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/fontawesome.min.css" />
         <link
+            rel="stylesheet"
+            media="only screen and (max-width: 1000px)"
+            href="css/tablet.css"
+        />
+        <link
+            rel="stylesheet"
+            media="only screen and (max-width: 768px)"
+            href="css/mobile.css"
+        />
+        <link
             rel="apple-touch-icon"
             sizes="120x120"
             href="/apple-touch-icon.png"
@@ -40,7 +50,7 @@
         <meta name="theme-color" content="#ffffff" />
         <title>My Cooking Blog | About</title>
     </head>
-    <body>
+    <body id="about">
         <!-- Navbar -->
         <nav id="main-nav">
             <div class="container">
@@ -79,7 +89,7 @@
         </nav>
 
         <!-- About -->
-        <section id="about">
+        <section id="about-blog">
             <div class="container">
                 <div class="grid-container">
                     <article class="card">
@@ -143,7 +153,7 @@
                             cupiditate! Libero a nulla expedita.
                         </p>
                     </article>
-                    <article class="card bg-primary about-me">
+                    <aside class="card bg-primary about-me">
                         <img src="img/chef.jpg" alt="John Doe" />
                         <h2>John Doe</h2>
                         <p>
@@ -156,7 +166,7 @@
                             eveniet provident temporibus, quos sequi. Modi
                             asperiores labore aut porro quasi?
                         </p>
-                    </article>
+                    </aside>
                 </div>
             </div>
         </section>
@@ -164,7 +174,7 @@
         <!-- Footer -->
         <footer id="main-footer">
             <div class="grid-container">
-                <div>
+                <div class="logo">
                     <img src="img/logo.png" alt="MyCookingBlog" />
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -173,7 +183,7 @@
                         dolorem. Omnis, consectetur?
                     </p>
                 </div>
-                <div>
+                <div class="newsletter">
                     <h3>Subscribe to our newsletter</h3>
                     <p>You will receive weekly recipes in your e-mail inbox.</p>
                     <form action="submit.php">
@@ -186,7 +196,7 @@
                         <input type="submit" value="Subscribe" class="btn" />
                     </form>
                 </div>
-                <div>
+                <div class="links">
                     <h3>Site Links</h3>
                     <ul class="list">
                         <li><a href="#">Privacy Policy</a></li>
@@ -194,7 +204,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="footer">
                     <p>
                         Design by
                         <span

@@ -1,0 +1,32 @@
+/* Site: Index */
+/* Variables */
+:root {
+    --navbar-height: 110px;
+}
+
+/* Navbar */
+#main-nav .container {
+    flex-direction: column;
+}
+#main-nav .logo {
+    height: 40px;
+    padding: 0;
+}
+#main-nav .social {
+    margin: 5px 0 5px;
+}
+/* Recipes */
+#recipes .grid-container {
+    grid-template-columns: 1fr;
+}
+#main-nav .search {
+    display: none;
+}
+/* Footer */
+#main-footer .grid-container {
+    display: flex;
+    flex-direction: column;
+}
+#main-footer .grid-container .footer {
+    grid-column: 1;
+}

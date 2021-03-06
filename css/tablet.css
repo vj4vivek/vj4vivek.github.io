@@ -1,0 +1,69 @@
+/* Tablets media query */
+/* Page: Index */
+/* Navbar */
+#main-nav .logo img {
+    object-fit: contain;
+    width: 100%;
+    min-width: 200px;
+}
+/* Showcase */
+#showcase {
+    height: 75vh;
+}
+#showcase .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+#showcase .showcase-container {
+    align-items: center;
+    text-align: center;
+    width: 75%;
+}
+#showcase .container h1 {
+    font-size: 1.5rem;
+}
+#showcase .container p,
+#showcase .container a {
+    font-size: 1rem;
+}
+
+/* Recipes */
+#recipes .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Footer */
+#main-footer .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+#main-footer .grid-container .logo {
+    order: 1;
+}
+#main-footer .grid-container .newsletter {
+    order: 3;
+    grid-column: 1 / span 2;
+}
+#main-footer .grid-container input[type="email"] {
+    width: 50%;
+}
+#main-footer .grid-container .links {
+    order: 2;
+}
+#main-footer .grid-container .footer {
+    grid-column: 1 / span 2;
+    order: 4;
+}
+
+/* Page: About */
+#about-blog .grid-container {
+    grid-template-columns: 1fr;
+}
+#about-blog .grid-container article {
+    grid-row: 2 / span 3;
+}
+#about-blog .grid-container aside {
+    grid-row: 1 / span 1;
+}

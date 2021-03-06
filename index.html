@@ -16,6 +16,16 @@
         <link rel="stylesheet" href="css/utilities.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/fontawesome.min.css" />
+        <link
+            rel="stylesheet"
+            media="only screen and (max-width: 1000px)"
+            href="css/tablet.css"
+        />
+        <link
+            rel="stylesheet"
+            media="only screen and (max-width: 768px)"
+            href="css/mobile.css"
+        />
         <title>My Cooking Blog | Whole Food Recipes</title>
         <link
             rel="apple-touch-icon"
@@ -40,7 +50,7 @@
         <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#ffffff" />
     </head>
-    <body>
+    <body id="index">
         <!-- Navbar -->
         <nav id="main-nav">
             <div class="container">
@@ -277,7 +287,7 @@
         <!-- Footer -->
         <footer id="main-footer">
             <div class="grid-container">
-                <div>
+                <div class="logo">
                     <img src="img/logo.png" alt="MyCookingBlog" />
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -286,7 +296,7 @@
                         dolorem. Omnis, consectetur?
                     </p>
                 </div>
-                <div>
+                <div class="newsletter">
                     <h3>Subscribe to our newsletter</h3>
                     <p>You will receive weekly recipes in your e-mail inbox.</p>
                     <form action="submit.php">
@@ -299,7 +309,7 @@
                         <input type="submit" value="Subscribe" class="btn" />
                     </form>
                 </div>
-                <div>
+                <div class="links">
                     <h3>Site Links</h3>
                     <ul class="list">
                         <li><a href="#">Privacy Policy</a></li>
@@ -307,7 +317,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="footer">
                     <p>
                         Design by
                         <span
