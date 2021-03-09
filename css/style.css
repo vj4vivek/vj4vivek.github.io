@@ -206,12 +206,7 @@
 .grid-template .grid-container aside {
     text-align: center;
 }
-
-/* Page: About */
-#about .grid-container article {
-    grid-row: 1 / span 3;
-}
-#about .about-me img {
+.grid-template .about-me img {
     border-radius: 50%;
     max-height: 200px;
     width: auto;
@@ -220,6 +215,11 @@
     border: 2px solid var(--dark);
     box-shadow: 1px 1px 10px rgba(var(--grey-shadow), 0.25);
     margin-bottom: 10px;
+}
+
+/* Page: About */
+#about .grid-container article {
+    grid-row: 1 / span 3;
 }
 
 /* Page: Article */

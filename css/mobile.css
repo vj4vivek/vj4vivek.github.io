@@ -5,6 +5,11 @@
     --placeholder: 70px;
 }
 
+/* Utilities */
+.card {
+    text-align: center;
+}
+
 /* Navbar */
 #main-nav .container {
     flex-direction: column;
@@ -68,6 +73,30 @@
 }
 
 /* Page: About */
-#blog-article .container {
+#about .container {
     padding: 0 24px;
+}
+
+/* Page: Article */
+#article .grid-container {
+    grid-template-columns: 1fr;
+}
+#article .grid-container .card-img {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+#article .grid-container article {
+    grid-column: 1 / span 1;
+}
+#article .about-me {
+    grid-row: 6 / span 1;
+    grid-column: 1 / span 1;
+}
+#article .about-categories {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 1;
+}
+#article .meta small {
+    display: flex;
+    flex-direction: column;
 }
