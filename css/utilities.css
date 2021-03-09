@@ -92,6 +92,7 @@
     width: max-content;
     box-shadow: 2px 2px 5px rgba(var(--dark-shadow), 0.25);
     cursor: pointer;
+    -webkit-appearance: none;
 }
 .btn:hover {
     opacity: 0.8;

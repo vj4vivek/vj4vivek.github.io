@@ -2,6 +2,7 @@
 /* Variables */
 :root {
     --navbar-height: 110px;
+    --grid-gap: 50px;
 }
 
 /* Navbar */
@@ -15,6 +16,19 @@
 #main-nav .social {
     margin: 5px 0 5px;
 }
+
+/* Showcase */
+#showcase .showcase-container {
+    width: 100%;
+}
+#showcase .container p,
+#showcase .container a {
+    font-size: 0.8rem;
+}
+#showcase .container p {
+    margin-bottom: 15px;
+}
+
 /* Recipes */
 #recipes .grid-container {
     grid-template-columns: 1fr;
@@ -22,6 +36,7 @@
 #main-nav .search {
     display: none;
 }
+
 /* Footer */
 #main-footer .grid-container {
     display: flex;
@@ -29,4 +44,7 @@
 }
 #main-footer .grid-container .footer {
     grid-column: 1;
+}
+#main-footer .grid-container input[type="email"] {
+    width: 90%;
 }

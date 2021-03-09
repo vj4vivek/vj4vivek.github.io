@@ -160,7 +160,7 @@
 }
 #main-footer .grid-container {
     grid-template-columns: repeat(3, 1fr);
-    padding: 32px 32px 32px var(--grid-gap);
+    padding: 30px;
     text-align: center;
 }
 #main-footer .grid-container .footer {

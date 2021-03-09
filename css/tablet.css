@@ -1,4 +1,3 @@
-/* Tablets media query */
 /* Page: Index */
 /* Navbar */
 #main-nav .logo img {
@@ -37,7 +36,6 @@
 /* Footer */
 #main-footer .grid-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
 }
 #main-footer .grid-container .logo {
     order: 1;
