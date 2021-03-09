@@ -2,7 +2,7 @@
 /* Variables */
 :root {
     --navbar-height: 110px;
-    --grid-gap: 50px;
+    --placeholder: 70px;
 }
 
 /* Navbar */
@@ -16,35 +16,58 @@
 #main-nav .social {
     margin: 5px 0 5px;
 }
+#main-nav .search {
+    display: none;
+}
 
 /* Showcase */
+#showcase {
+    height: 90vh;
+}
 #showcase .showcase-container {
     width: 100%;
 }
 #showcase .container p,
 #showcase .container a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 #showcase .container p {
     margin-bottom: 15px;
+    max-height: 45%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Recipes */
+#recipes {
+    top: -110px;
+}
+#recipes .container {
+    padding: 24px;
+}
 #recipes .grid-container {
     grid-template-columns: 1fr;
-}
-#main-nav .search {
-    display: none;
 }
 
 /* Footer */
 #main-footer .grid-container {
     display: flex;
     flex-direction: column;
+    gap: 0;
+    padding: 24px;
+}
+#main-footer .grid-container > * {
+    margin-bottom: 50px;
 }
 #main-footer .grid-container .footer {
     grid-column: 1;
+    margin: 0;
 }
 #main-footer .grid-container input[type="email"] {
     width: 90%;
+}
+
+/* Page: About */
+#about-blog .container {
+    padding: 0 24px;
 }
