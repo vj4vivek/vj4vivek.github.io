@@ -129,6 +129,7 @@
     height: 100%;
     object-fit: cover;
 }
+
 /* Article Utilities */
 .meta {
     background-color: var(--light-grey);

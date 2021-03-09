@@ -6,8 +6,9 @@
 }
 
 /* Utilities */
-.card {
-    text-align: center;
+.card p,
+.card ul {
+    margin-bottom: 30px;
 }
 
 /* Navbar */
