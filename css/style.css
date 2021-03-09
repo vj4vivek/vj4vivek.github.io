@@ -155,8 +155,6 @@
 #main-footer {
     background-color: var(--dark);
     color: var(--light);
-    /* position: relative;
-    bottom: 0; */
 }
 #main-footer .grid-container {
     grid-template-columns: repeat(3, 1fr);
@@ -189,35 +187,31 @@
     width: 50%;
 }
 
-/* Page: About */
-#about {
+/* Grid Template (About, Article) */
+#about-page,
+#article-page {
     display: flex;
     flex-direction: column;
 }
-#about-blog {
+.grid-template {
     flex: 1 0 auto;
 }
-#about-blog .container {
+.grid-template .container {
     padding: 0 32px;
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 auto;
 }
-#about-blog .grid-container {
+.grid-template .grid-container {
     margin: 50px 0;
     grid-template-columns: 4fr 2fr;
 }
-#about-blog .grid-container article {
-    grid-row: 1 / span 3;
-    order: 1;
+.grid-template .grid-container aside {
+    text-align: center;
 }
-#about-blog .grid-container aside {
-    order: 2;
-}
-#about-blog .grid-container .footer {
+
+/* Page: About */
+#about .grid-container article {
     grid-row: 1 / span 3;
 }
-#about-blog .about-me img {
+#about .about-me img {
     border-radius: 50%;
     max-height: 200px;
     width: auto;
@@ -227,6 +221,21 @@
     box-shadow: 1px 1px 10px rgba(var(--grey-shadow), 0.25);
     margin-bottom: 10px;
 }
-#about-blog #main-footer {
-    flex-shrink: 0;
+
+/* Page: Article */
+#article .grid-container article {
+    grid-row: 2 / span 3;
+}
+#article .grid-container aside {
+    text-align: center;
+}
+#article .about-categories ul li {
+    text-align: left;
+}
+#article .about-categories ul li a {
+    color: var(--dark);
+}
+#article .about-categories ul li a:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-out;
 }
