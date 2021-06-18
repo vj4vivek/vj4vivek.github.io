@@ -26,17 +26,11 @@
     display: none;
 }
 
-/* Showcase */
-#showcase {
-    height: 90vh;
-}
+
 #showcase .showcase-container {
     width: 100%;
 }
-#showcase .container p,
-#showcase .container a {
-    font-size: 0.9rem;
-}
+
 #showcase .container p {
     margin-bottom: 15px;
     max-height: 45%;
@@ -44,10 +38,6 @@
     text-overflow: ellipsis;
 }
 
-/* Recipes */
-#recipes {
-    top: -110px;
-}
 #recipes .container {
     padding: 24px;
 }

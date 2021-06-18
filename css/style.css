@@ -20,7 +20,7 @@
     max-width: var(--max-width);
     width: 100%;
     margin: auto;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 /* #main-nav .container::before {
     z-index: -1;
@@ -87,6 +87,7 @@
     z-index: 1;
     position: relative;
     height: calc(100% - var(--navbar-height));
+    flex-wrap: wrap;
 }
 #showcase .showcase-container {
     /* display: flex;
